@@ -1,0 +1,195 @@
+{
+  "queries": [
+    {
+      "name": "Bird species",
+      "url": "https://services6.arcgis.com/r4oy9CRSUDvIzVAH/arcgis/rest/services/IWS_Survey/FeatureServer/0",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "acSpeciesCode",
+              "label": "acSpeciesCode",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Species code is",
+              "hint": ""
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "popup": {
+        "title": "IWS Survey",
+        "fields": [
+          {
+            "name": "bcr",
+            "alias": "bcr",
+            "specialType": "none"
+          },
+          {
+            "name": "acSpeciesCode",
+            "alias": "Species Code",
+            "specialType": "none"
+          },
+          {
+            "name": "English_Name",
+            "alias": "Species Name",
+            "specialType": "none"
+          },
+          {
+            "name": "MBCA_2013",
+            "alias": "MBCA_2013",
+            "specialType": "none"
+          },
+          {
+            "name": "CDN_Status",
+            "alias": "CDN_Status",
+            "specialType": "none"
+          },
+          {
+            "name": "Family_CmName_EN",
+            "alias": "Family",
+            "specialType": "none"
+          }
+        ]
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": [
+        "acSpeciesCode ASC"
+      ]
+    },
+    {
+      "name": "Other attributes",
+      "url": "https://services6.arcgis.com/r4oy9CRSUDvIzVAH/arcgis/rest/services/IWS_Survey/FeatureServer/0",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "bcr",
+              "label": "bcr",
+              "shortType": "number",
+              "type": "esriFieldTypeDouble"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": false,
+              "type": "unique",
+              "value": null
+            },
+            "interactiveObj": {
+              "prompt": "BCR is",
+              "hint": ""
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "CDN_Status",
+              "label": "CDN_Status",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Status is",
+              "hint": ""
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "MBCA_2013",
+              "label": "MBCA_2013",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "MBCA is",
+              "hint": ""
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "popup": {
+        "title": "Other attributes",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "queries": [
+    {
+      "name": "IWS Survey",
+      "url": "https://services6.arcgis.com/r4oy9CRSUDvIzVAH/arcgis/rest/services/IWS_Survey/FeatureServer/0",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "English_Name",
+              "label": "Species",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Species",
+              "hint": ""
+            },
+            "caseSensitive": false
+          },
+		  {
+            "fieldObj": {
+              "name": "bcr",
+              "label": "BCR",
+              "shortType": "number",
+              "type": "esriFieldTypeDouble"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": false,
+              "type": "unique",
+              "value": null
+            },
+            "interactiveObj": {
+              "prompt": "BCR",
+              "hint": ""
+            },
+            "caseSensitive": false
+          },          
+          {
+            "fieldObj": {
+              "name": "MBCA_2013",
+              "label": "MBCA",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "MBCA",
+              "hint": ""
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "popup": {
+        "title": "IWS Survey",
+        "fields": [
+          {
+            "name": "bcr",
+            "alias": "BCR",
+            "specialType": "none"
+          },
+          {
+            "name": "acSpeciesCode",
+            "alias": "Species code",
+            "specialType": "none"
+          },
+          {
+            "name": "English_Name",
+            "alias": "Species name",
+            "specialType": "none"
+          },
+          {
+            "name": "MBCA_2013",
+            "alias": "MBCA",
+            "specialType": "none"
+          },
+          {
+            "name": "CDN_Status",
+            "alias": "Breeding",
+            "specialType": "none"
+          },
+          {
+            "name": "Family_CmName_EN",
+            "alias": "Family name",
+            "specialType": "none"
+          }		  
+        ]
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": [
+        "acSpeciesCode ASC"
+      ]
+    },
+	{
+      "name": "Breeding Bird Atlas of BC",
+      "url": "https://services6.arcgis.com/r4oy9CRSUDvIzVAH/arcgis/rest/services/Breeding_Bird_Atlas_of_BC/FeatureServer/0",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "English_Name",
+              "label": "Species",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Species name",
+              "hint": ""
+            },
+            "caseSensitive": false
+          },          
+		  {
+            "fieldObj": {
+              "name": "CDN_Status",
+              "label": "Breeding status",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Breeding status",
+              "hint": ""
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "MBCA_2013",
+              "label": "MBCA",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "MBCA",
+              "hint": ""
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "popup": {
+        "title": "Breeding Bird Atlas",
+        "fields": [
+          {
+            "name": "acSpeciesCode",
+            "alias": "Species code",
+            "specialType": "none"
+          },
+          {
+            "name": "English_Name",
+            "alias": "Species name",
+            "specialType": "none"
+          },
+          {
+            "name": "MBCA_2013",
+            "alias": "MBCA",
+            "specialType": "none"
+          },
+          {
+            "name": "CDN_Status",
+            "alias": "Breeding",
+            "specialType": "none"
+          },
+          {
+            "name": "Family_CmName_EN",
+            "alias": "Family name",
+            "specialType": "none"
+          }
+        ]
+      },
+      "resultsSymbol": {
+        "color": [
+          155,
+          187,
+          89,
+          128
+        ],
+        "outline": {
+          "color": [
+            115,
+            140,
+            61,
+            255
+          ],
+          "width": 1.5,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        },
+        "type": "esriSFS",
+        "style": "esriSFSSolid"
+      },
+      "objectIdField": "OBJECTID_1",
+      "orderByFields": [
+        "English_Name ASC"
+      ]
+    }
+  ]
+}
